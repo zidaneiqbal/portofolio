@@ -11,6 +11,8 @@
   </div>
 </template>
 <script>
+import { supabase } from "/src/libs/supabaseClient";
+
 export default {
   data() {
     return {
@@ -18,6 +20,17 @@ export default {
       age: "20",
       location: "Malang",
     };
+  },
+  mounted() {
+    this.getData();
+  },
+  methods: {
+    async getData() {
+      // eslint-disable-next-line prettier/prettier
+      let { data: porto, error } = await supabase.from('porto').select('name').eq('id', 1)
+
+      console.log(porto, error);
+    },
   },
 };
 </script>

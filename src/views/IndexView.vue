@@ -11,36 +11,22 @@
           width="300"
           height="300"
         />
-        <!-- <span class="position-absolute" style="z-index: -10; top: 0; left: 0">
-          <svg
-            width="325"
-            height="325"
-            viewBox="0 0 200 200"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill="#F2F4F8"
-              d="M44.9,-61.7C59,-51.4,72,-39.5,77.3,-24.8C82.5,-10,80.1,7.6,75.4,25.4C70.8,43.1,64.1,61.1,51.2,73.4C38.3,85.7,19.1,92.3,-0.1,92.4C-19.3,92.5,-38.5,86,-54.4,74.7C-70.2,63.3,-82.6,47.1,-85.1,29.9C-87.6,12.7,-80.2,-5.5,-73.9,-23.8C-67.7,-42.1,-62.6,-60.6,-50.5,-71.6C-38.3,-82.5,-19.2,-85.9,-1.9,-83.3C15.3,-80.6,30.7,-72,44.9,-61.7Z"
-              transform="translate(100 100)"
-            />
-          </svg>
-        </span> -->
       </header>
     </div>
-    <div class="col-12 col-md-6 col-sm-12 about-me text-center">
-      <h5>
+    <div class="col-12 col-md-6 col-sm-12 about-me">
+      <h5 class="text-center">
         Hi, I'm a
         <span class="typed-text">{{ typeValue }}</span>
         <span class="blinking-cursor">|</span>
         <span class="cursor" :class="{ typing: typeStatus }">&nbsp;</span>
       </h5>
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book. It has survived not only five
-        centuries.
-      </p>
+      <span class="text-justify">
+        Selamat datang di website portofolio Muhammad Zidane Iqbal, seorang
+        Fullstack Developer berpengalaman sejak tahun 2020. Saya ahli dalam
+        menggunakan framework Vue dan Laravel untuk menciptakan solusi web yang
+        inovatif dan responsif. Jelajahi portofolio saya untuk melihat berbagai
+        proyek yang telah saya selesaikan.
+      </span>
     </div>
   </div>
 </template>

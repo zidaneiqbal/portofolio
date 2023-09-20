@@ -1,6 +1,14 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark full-width">
-    <a class="navbar-brand" href="#">Zidane Iqbal</a>
+    <a class="navbar-brand" href="#">
+      <img
+        alt="Brand Logo"
+        class="text-center"
+        src="@/assets/aenaD.png"
+        width="70"
+        height="90"
+      />
+    </a>
     <button
       class="navbar-toggler"
       type="button"

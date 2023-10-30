@@ -12,10 +12,10 @@
         />
       </a>
       <div class="hidden md:flex md:w-full place-content-center space-x-4 text-center">
-        <span @click="route('index')" class="text-secondary cursor-pointer">Home</span>
-        <span @click="route('index')" class="text-secondary cursor-pointer">About</span>
-        <span @click="route('index')" class="text-secondary cursor-pointer">Service</span>
-        <span @click="route('index')" class="text-secondary cursor-pointer">Contact</span>
+        <span @click="route('home')" class="text-secondary cursor-pointer">Home</span>
+        <span @click="route('home')" class="text-secondary cursor-pointer">About</span>
+        <span @click="route('home')" class="text-secondary cursor-pointer">Service</span>
+        <span @click="route('home')" class="text-secondary cursor-pointer">Contact</span>
         <span @click="route('list')" class="text-secondary cursor-pointer">List</span>
       </div>
     </div>

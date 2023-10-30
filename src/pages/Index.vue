@@ -4,5 +4,5 @@ import About from '@/pages/About.vue';
 </script>
 <template>
   <Home />
-  <About />
+  <!-- <About /> -->
 </template>

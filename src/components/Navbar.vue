@@ -16,6 +16,7 @@
         <a href="/#about" class="text-secondary">About</a>
         <a href="#" class="text-secondary">Services</a>
         <a href="#" class="text-secondary">Contact</a>
+        <span @click="route('list')" class="text-secondary cursor-pointer">List</span>
       </div>
     </div>
   </div>
@@ -25,5 +26,10 @@
 <script>
 export default {
   name: "NavbarComponent",
+  methods: {
+    route(link) {
+      this.$router.push({ name: link});
+    }
+  }
 };
 </script>

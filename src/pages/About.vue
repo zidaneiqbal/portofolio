@@ -7,14 +7,17 @@
             Skills
           </h1>
         </div>
-        <div class="py-10 w-full lg:w-3/4 self-center grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-6">
-          <div v-for="(value, index) in skills" :key="index" class="justify-self-center">
-            <img :alt="`${value.name} Logo`" class="img" :src="value.img" width="150" height="150" />
+        <div class="py-5 w-full lg:w-3/4 self-center grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 gap-6">
+          <div v-for="(value, index) in skills" :key="index" class="justify-self-center py-6">
+            <img @mouseover="value.tooltip = true" @mouseout="value.tooltip = false" :alt="`${value.name} Logo`" class="img" :src="value.img" />
+            <div v-if="value.tooltip" class="tooltip">
+              {{ value.name }}
+            </div>
           </div>
         </div>
         <div class="hidden lg:flex w-full lg:w-1/4 text-primary">
           <h1 class="text-center text-3xl">
-            Skills
+            Skills that I am good at
           </h1>
         </div>
       </div>
@@ -24,43 +27,64 @@
 <script>
 import HTMLImg from "@/assets/HTML5.png";
 import CSSImg from "@/assets/CSS3.png";
+import PHPImg from "@/assets/Php.png";
+import TailwindImg from "@/assets/Tailwind.png";
+import BootstrapImg from "@/assets/Bootstrap.png";
+import VueImg from "@/assets/Vue.png";
+import ReactImg from "@/assets/React.png";
+import LaravelImg from "@/assets/Laravel.png";
+import NuxtImg from "@/assets/Nuxt.png";
 export default {
   data() {
     return {
       skills: [
         {
           name: "HTML",
-          img: HTMLImg
+          img: HTMLImg,
+          tooltip: false
         },
         {
           name: "CSS",
-          img: CSSImg
+          img: CSSImg,
+          tooltip: false
         },
         {
-          name: "HTML",
-          img: HTMLImg
+          name: "PHP",
+          img: PHPImg,
+          tooltip: false
         },
         {
-          name: "CSS",
-          img: CSSImg
+          name: "Tailwind",
+          img: TailwindImg,
+          tooltip: false
         },
         {
-          name: "HTML",
-          img: HTMLImg
+          name: "Bootstrap",
+          img: BootstrapImg,
+          tooltip: false
         },
         {
-          name: "CSS",
-          img: CSSImg
+          name: "Vue",
+          img: VueImg,
+          tooltip: false
         },
         {
-          name: "HTML",
-          img: HTMLImg
+          name: "React",
+          img: ReactImg,
+          tooltip: false
         },
         {
-          name: "CSS",
-          img: CSSImg
+          name: "Nuxt",
+          img: NuxtImg,
+          tooltip: false
         },
-      ]
+        {
+          name: "Laravel",
+          img: LaravelImg,
+          tooltip: false
+        },
+      ],
+      showTooltip: false
     };
   },
   methods: {}
@@ -70,6 +94,15 @@ export default {
 <style>
 .img {
   width: auto;
-  height: 150px;
+  height: 125px;
+}
+
+.tooltip {
+  position: absolute;
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  transform: translateY(-100%);
 }
 </style>

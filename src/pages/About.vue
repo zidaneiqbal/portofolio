@@ -2,10 +2,18 @@
   <section id="about" class="py-20 px-5 bg-secondary">
     <div class="container h-3/4">
       <div class="flex flex-wrap">
-        <div class="lg:hidden md:flex sm:flex w-full lg:w-1/4 text-primary">
-          <h1 class="text-center text-3xl">
-            Skills
+        <div class="lg:hidden md:flex sm:flex flex-col w-full lg:w-1/4 text-primary">
+          <h1 class="text-center text-3xl font-bold w-full mb-3">
+            Tentang Saya
           </h1>
+          <span>
+            Saya seorang Fullstack Developer berpengalaman sejak tahun 2020. Saya cukup mahir dalam menggunakan framework Vue dan Laravel untuk menciptakan solusi web yang inovatif dan responsif.
+            <br>
+            <br>
+          </span>
+          <span class="font-bold">
+            Berikut saya cantumkan kemampuan saya.
+          </span>
         </div>
         <div class="py-5 w-full lg:w-3/4 self-center grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 gap-6">
           <div v-for="(value, index) in skills" :key="index" class="justify-self-center py-6">
@@ -15,10 +23,18 @@
             </div>
           </div>
         </div>
-        <div class="hidden lg:flex w-full lg:w-1/4 text-primary">
-          <h1 class="text-center text-3xl">
-            Skills that I am good at
+        <div class="hidden lg:flex flex-col w-full lg:w-1/4 text-primary">
+          <h1 class="text-center text-3xl font-bold w-full mb-3">
+            Tentang Saya
           </h1>
+          <span>
+            Saya seorang Fullstack Developer berpengalaman sejak tahun 2020. Saya cukup mahir dalam menggunakan framework Vue dan Laravel untuk menciptakan solusi web yang inovatif dan responsif.
+            <br>
+            <br>
+          </span>
+          <span class="font-bold">
+            Berikut saya cantumkan kemampuan saya.
+          </span>
         </div>
       </div>
     </div>

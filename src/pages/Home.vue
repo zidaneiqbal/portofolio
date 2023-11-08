@@ -13,8 +13,7 @@
             <span class="cursor" :class="{ typing: typeStatus }">&nbsp;</span>
           </h1>
           <span class="text-justify">
-            Selamat datang di website portofolio Muhammad Zidane Iqbal, seorang Fullstack Developer berpengalaman sejak tahun 2020. Saya ahli dalam menggunakan framework Vue dan Laravel untuk menciptakan solusi web yang inovatif dan
-            responsif.
+            Selamat datang di website portofolio Muhammad Zidane Iqbal, bisa dipanggil Zidane. Saya seorang Fullstack Developper, Menggunakan Framework Laravel, Vue & React.
           </span>
         </div>
       </div>

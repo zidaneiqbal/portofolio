@@ -1,5 +1,5 @@
 <template>
-  <section id="contact" class="py-20 px-5 bg-secondary">
+  <section id="contact" class="pb-20 bg-primary">
     <div class="max-w-md w-full mx-auto bg-white p-8 rounded-lg shadow-lg">
       <h2 class="text-2xl font-semibold text-gray-800 mb-6">Contact</h2>
       <form @submit.prevent="submitForm" class="space-y-6">

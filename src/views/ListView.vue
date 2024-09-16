@@ -9,7 +9,7 @@
         v-for="(data, index) in listItem"
         :key="index"
       >
-        <span class=""> {{ data.name }} </span>
+        <span class="">{{ data.name }}</span>
       </span>
     </div>
   </div>

@@ -1,6 +1,7 @@
 <template>
   <div
     class="vh-80 d-flex justify-content-center align-items-center row gx-1 text-white"
+    id="home"
   >
     <div class="col-12 col-md-6 col-sm-12 text-center">
       <header class="position-relative">
@@ -59,8 +60,6 @@ export default {
     async getData() {
       // eslint-disable-next-line prettier/prettier
       let { data: porto, error } = await supabase.from('porto').select('name').eq('id', 1)
-
-      console.log(porto, error);
     },
     typeText() {
       if (

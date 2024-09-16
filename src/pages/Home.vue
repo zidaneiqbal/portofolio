@@ -13,7 +13,7 @@
             <span class="cursor" :class="{ typing: typeStatus }">&nbsp;</span>
           </h1>
           <span class="text-justify">
-            Selamat datang di website portofolio Muhammad Zidane Iqbal, bisa dipanggil Zidane. Saya seorang Fullstack Developper, Menggunakan Framework Laravel, Vue & React.
+            Selamat datang di website portofolio Muhammad Zidane Iqbal, bisa dipanggil Zidane. Saya seorang Fullstack Developper, Menggunakan Framework Laravel & Vue.
           </span>
         </div>
       </div>
